@@ -55,7 +55,11 @@ The most recent record is kept based on ingestion time and source file.
 > **Note:**  
 > The JSON files under the `service_accounts/` directory are **dummy and empty placeholders**.  
 > To run the project locally, real service accounts must be created in GCP and the generated JSON keys must be placed into this directory with the required permissions.
-
+> ---
+> Before starting the pipeline for the first time, make sure to delete the following directory if it exists:
+> ```
+> data/daily_output/init
+> ```
 
 > **Data Note:**  
 > The compressed data file must be placed under the `data` directory: `data/case_data.parquet.gzip`
